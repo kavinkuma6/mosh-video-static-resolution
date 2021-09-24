@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mosh Video Static Resolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img src="images/logo.png" alt="app-logo" class="logo-icon" />
+        Mosh Video Static Resolution <span class="version">(1.0.0)</span>
+      </h1>
+    </div>
+    <div class="modal-content">
+      <p>
+        Are you a fan(a.k.a student) of
+        <a target="_blank" href="https://twitter.com/moshhamedani"
+          >Mosh Hamedani</a
+        >
+        and watching his videos using limited data plan?
+        <br />
+        <br />
+        Then you might have faced the below problem like me.
+        <br />
+        <br />
+        Do you change the resolution of the video every time to 360P or lesser
+        than that 1080P(MAX) to save the data?
+        <br />
+        <br />
+        Then this extension will be helpful for you to make the resolution
+        static.
+        <br />
+        <br />
+        ©
+        <a target="_blank" href="https://twitter.com/Kavinkumar_Nkl"
+          >Kavinkumar</a
+        >
+      </p>
+    </div>
+    <form name="resolutionForm" class="modal-resolution-selector">
+      <ul>
+        <li>
+          <label for="360p">
+            <input type="radio" name="resolution" id="360p" value="360p" />
+            360P
+          </label>
+        </li>
+        <li>
+          <label for="540p">
+            <input type="radio" name="resolution" id="540p" value="540p" />
+            540P
+          </label>
+        </li>
+        <li>
+          <label for="720p">
+            <input type="radio" name="resolution" id="720p" value="720p" />
+            720P
+          </label>
+        </li>
+        <li>
+          <label for="1080p">
+            <input type="radio" name="resolution" id="1080p" value="1080p" />
+            1080P
+          </label>
+        </li>
+      </ul>
+    </form>
+    <script src="./popup.js"></script>
+  </body>
+</html>

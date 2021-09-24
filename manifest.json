@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Mosh Video Static Resolution",
+  "description": "This extension will the resolution of the video static in https://codewithmosh.com - course videos",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://*.codewithmosh.com/courses/*/lectures/*"]
+}
